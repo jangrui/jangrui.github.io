@@ -1,7 +1,7 @@
 # 个人博客
 
 [![作者: Jangrui](https://img.shields.io/badge/作者-Jangrui-blue.svg?style=for-the-badge)](https://jangrui.com)
-[![License](https://img.shields.io/github/license/jangrui/blog?style=for-the-badge)](https://github.com/jagnrui/blog/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/jangrui/blog?style=for-the-badge)](https://github.com/jangrui/blog/blob/master/LICENSE)
 
 使用 VuePress 与 [Vuepress-theme-hope](https://github.com/Mister-Hope/vuepress-theme-hope) 搭建的个人博客
 

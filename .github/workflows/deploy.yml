@@ -24,10 +24,10 @@ jobs:
 
       - name: Install Deps
         if: steps.node-modules.outputs.cache-hit != 'true'
-        run: yarn install --frozen-lockfile
+        run: npm i
 
       - name: Build Template
-        run: yarn run build
+        run: npm run build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
