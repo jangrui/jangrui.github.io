@@ -1,9 +1,10 @@
 ---
-title: 命令执行
 icon: play
 time: 2019-11-20
 category: Linux
 ---
+
+# 命令执行
 
 前面讲过，在 Linux 系统中“一切皆文件”，Linux 命令也不例外。那么，当编辑完成 Linux 命令并回车后，系统底层到底发生了什么事情呢?
 

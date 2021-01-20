@@ -1,9 +1,10 @@
 ---
-title: 文件
 icon: file
 time: 2019-11-19
 category: Linux
 ---
+
+# 文件
 
 ## touch 命令
 

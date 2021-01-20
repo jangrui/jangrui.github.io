@@ -1,9 +1,10 @@
 ---
-title: 文件
 icon: file
 time: 2019-11-17
 category: Linux
 ---
+
+# 文件
 
 ## 目录
 

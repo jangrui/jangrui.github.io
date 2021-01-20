@@ -1,9 +1,10 @@
 ---
-title: 基本格式
 icon: program
 time: 2019-11-18
 category: Linux
 ---
+
+# 基本格式
 
 ## 命令提示符
 

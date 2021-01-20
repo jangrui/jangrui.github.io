@@ -1,9 +1,10 @@
 ---
-title: Linux 命令格式
 icon: command
 time: 2019-11-18
 category: Linux
 ---
+
+# Linux 命令格式
 
 ## 目录
 

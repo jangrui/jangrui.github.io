@@ -101,7 +101,7 @@ wechat
 
 - 添加用户报警媒介
 
-![用户报警媒介](./images/zabbix/media-types-wechat-user.gif)
+![用户报警媒介](./images/media-types-wechat-user.gif)
 
 - 添加报警动作
 

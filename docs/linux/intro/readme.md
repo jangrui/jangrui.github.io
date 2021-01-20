@@ -26,7 +26,7 @@ Linux 不仅是免费的，更是开源的(open source)，这意味着任何人�
 
 Linux 的发行版说简单点就是将 Linux 内核与应用软件做一个打包。
 
-![intro](../assets/intro.jpg)
+![intro](./images/intro.jpg)
 
 事实上，已经孵化出专属 Linux 各发行版的巨大生态系统。一个发行版(distribution ，有时缩写为 distro)是一个定制的软件包，它将 Linux 内核以及用户计算机 Linux 运行版的安装工具一起发布。
 
