@@ -1,0 +1,23 @@
+{
+  "name": "Linux-Ops-Notes",
+  "version": "1.0.0",
+  "description": "我要的是一份文档，你却给了我一本书。",
+  "scripts": {
+    "serve": "vuepress dev docs",
+    "cleanServe": "vuepress dev docs --no-cache",
+    "build": "vuepress build docs",
+    "test": "echo \"Warning: no test specified\" && exit 0"
+  },
+  "author": "Jangrui",
+  "license": "MIT",
+  "keywords": [
+    "Jangrui",
+    "Linux",
+    "Docker"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "vuepress": "^1.8.0",
+    "vuepress-theme-hope": "^1.8.1"
+  }
+}
