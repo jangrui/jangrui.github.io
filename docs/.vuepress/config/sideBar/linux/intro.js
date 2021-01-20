@@ -24,7 +24,7 @@ module.exports = [
       {
         title: "Linux 命令",
         icon: "command",
-        prefix: "./",
+        prefix: "command/",
         collapsable: false,
         children: [
           "command",

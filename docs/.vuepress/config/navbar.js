@@ -36,8 +36,8 @@ module.exports = {
       text: "日志",
       icon: "logs",
       items: [
-        { text: "ELK", link: "/log/elk/", icon: "elk" },
-        { text: "Loki", link: "/log/loki/", icon: "loki" },
+        { text: "ELK", link: "/logs/elk/", icon: "elk" },
+        { text: "Loki", link: "/logs/loki/", icon: "loki" },
       ],
     },
     { 

@@ -25,9 +25,9 @@ module.exports = {
     "/monitor/prometheus/": require("./monitor/prometheus"),
     "/monitor/grafana/": require("./monitor/grafana"),
 
-    // log
-    "/log/elk/": require("./log/elk"),
-    "/log/loki/": require("./log/loki"),
+    // logs
+    "/logs/elk/": require("./logs/elk"),
+    "/logs/loki/": require("./logs/loki"),
 
     // devops
     "/devops/ansible/": require("./devops/ansible"), 
@@ -48,12 +48,9 @@ module.exports = {
     "/bigdata/zookeeper/": require("./bigdata/zookeeper"), 
 
     // web
-    "/about/": ["", "site"],
-    "/": ["", "linux/", "db/", "container/", "monitor/", "log/", "devops/", "bigdata/", "about/"],
+    "/": [ "", "linux/", "db/", "container/", "monitor/", "logs/", "devops/", "bigdata/" ],
   },
   en: {
     "/en/": [""],
-    "/en/about/": ["", "site"],
-    "/en/": ["", "about/"],
   },
 };

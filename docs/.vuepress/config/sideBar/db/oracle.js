@@ -5,7 +5,7 @@ module.exports = [
     collapsable: false,
     prefix: "./",
     children: [
-      "06.oracle命令汇总",
+      "01.oracle命令汇总",
     ],
   },
 ];

@@ -67,7 +67,6 @@ module.exports = [
         prefix: "multistage-builds/",
         children: [ "laravel", ]
       },
-      "multistage-builds",
       "manifest",
       "other",
       "internal",
