@@ -1,0 +1,185 @@
+site_name: Linux 运维笔记
+site_url: https://jangrui.com
+site_author: Jangrui
+site_description: >-
+  运维需要的不是天赋异禀，而是经验丰富！
+
+# Repository
+repo_name: jangrui/jangrui.com
+repo_url: https://github.com/jangrui/jangrui.com
+edit_uri: ""
+
+# Copyright
+copyright: Copyright &copy; 2021 Jangrui
+
+# Configuration
+theme:
+  name: material
+  custom_dir: material
+  # name: null
+  # custom_dir: mkdocs-material/material
+
+  # Static files
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: zh
+  features:
+    - navigation.instant
+    - navigation.sections
+    # - navigation.expand
+    - navigation.tabs
+    # - navigation.tabs.sticky
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+    # logo: assets/logo.png
+
+# Plugins
+plugins:
+  - search
+#   - redirects:
+#       redirect_maps:
+#         changelog/insiders.md: insiders/changelog.md
+  - minify:
+      minify_html: true
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/jangrui
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/jangrui
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/jangrui1993
+    # - icon: fontawesome/brands/gitter
+    #   link: https://gitter.im/jangrui/jangrui.com
+    # - icon: fontawesome/brands/linkedin
+    #   link: https://linkedin.com/in/jangrui/
+    # - icon: fontawesome/brands/instagram
+    #   link: https://instagram.com/jangrui
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - Home: index.md
+  - Linux:
+    - CentOS 系统初始化: linux/centos-init.md
+    - Bash:
+      - 作者: linux/bash/author.md
+      - 简介: linux/bash/intro.md
+      - 基本语法: linux/bash/grammar.md
+      - 模式扩展: linux/bash/expansion.md
+      - 引号和转义: linux/bash/quotation.md
+      - 变量: linux/bash/variable.md
+      - 字符串操作: linux/bash/string.md
+      - 算术运算: linux/bash/arithmetic.md
+      - 行操作: linux/bash/readline.md
+      - 目录堆栈: linux/bash/stack.md
+      - 脚本入门: linux/bash/script.md
+      - read 命令: linux/bash/read.md
+      - 条件判断: linux/bash/condition.md
+      - 循环: linux/bash/loop.md
+      - 函数: linux/bash/function.md
+      - 数组: linux/bash/array.md
+      - set 命令: linux/bash/set.md
+      - 脚本除错: linux/bash/debug.md
+      - mktemp 命令，trap 命令: linux/bash/mktemp.md
+      - 启动环境: linux/bash/startup.md
+      - 命令提示符: linux/bash/prompt.md
+    - Services:
+      - SSH 远程管理主机服务: linux/service/ssh.md
+      - DHCP 动态分配主机地址: linux/service/dhcp.md
+      - Bind 域名解析服务: linux/service/bind.md
+      - LVM 逻辑卷管理器: linux/service/lvm.md
+      - RAID 磁盘阵列技术: linux/service/raid.md
+      - iSCSI 网络存储服务: linux/service/iscsi.md
+      - FTP 文件传输服务: linux/service/ftp.md
+      - NFS 文件共享服务: linux/service/nfs.md
+      - Samba 文件共享服务: linux/service/samba.md
+      - AutoFs 自动挂载服务: linux/service/autofs.md
+      - LDAP 轻量级目录服务: linux/service/ldap.md
+      - PXE 无人值守安装服务: linux/service/pxe-and-kickstart-unattended-installation-service.md
+      - Postfix 部署邮件系统: linux/service/postfix-and-dovecot-deploy-mail-system.md
+      - Squid 代理服务: linux/service/squid-proxy-server.md
+    - FAQ:
+      - CentOS 误删 glibc 恢复: linux/faq/recovery-of-glibc-deleted-by-centos.md
+
+  - 容器:
+    - Docker:
+      - 安装 docker: container/docker/install.md
+    - Kubernetes:
+      - 安装 k8s: container/kubernetes/install-k8s.md
+      - 搭建 nfs 作为 k8s 默认 sc: container/kubernetes/setup-nfs-as-k8s-default-sc.md
+      - 安装 metrics-server: container/kubernetes/install-metrics-server-for-k8s.md
+
+  - MacOS:
+    - MacOS 自用软件: macos/macos 自用软件.md
+    - 处理烦人的 .DS_Store 文件: macos/处理烦人的 .DS_Store 文件.md
+    - MacOS Big Sur 无法修改系统文件: macos/macOS Big Sur 无法修改系统文件.md
+
+# Google Analytics
+# google_analytics:
+#   - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+#   - auto
