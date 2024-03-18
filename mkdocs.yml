@@ -81,7 +81,7 @@ plugins:
 #         changelog/insiders.md: insiders/changelog.md
   - minify:
       minify_html: true
-  - git-revision-date
+  - git-revision-date-localized
 
 # Customization
 extra:
