@@ -1,4 +1,4 @@
-## 配置 NFS 服务器
+# 配置 NFS 服务器
 
 ```bash
 yum install -y nfs-utils
@@ -12,7 +12,7 @@ exportfs -r
 #检查配置是否生效
 exportfs
 # 输出结果如下所示
-/nfs/data     	<world>
+/nfs/data <world>
 ```
 
 ## 搭建 NFS Client
@@ -73,8 +73,10 @@ kubectl exec -it vol-nfs -- curl localhost
 ```
 
 ## 设置动态供应
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/330969/1617698283610-ee448ccb-359c-4471-97ca-a5b50c14317f.png#align=left&display=inline&height=617&margin=%5Bobject%20Object%5D&name=image.png&originHeight=617&originWidth=1050&size=154665&status=done&style=shadow&width=1050)<br />
-<br />创建 provisioner（NFS环境前面已经搭好）
+
+![动态供应](https://cdn.jsdelivr.net/gh/jangrui/images@main//2024/03/18/20240318171809.png)
+
+创建 provisioner（NFS环境前面已经搭好）
 
 | 字段名称 | 填入内容 | 备注 |
 | :--- | :--- | :--- |
@@ -219,16 +221,16 @@ EOF
 kubectl apply -f nfs-client-provisioner-storageclass.yaml
 ```
 
-:::info
-扩展"reclaim policy"有三种方式：Retain、Recycle、Deleted。
+!!! tip
 
-- `Retain`: 保护被PVC释放的PV及其上数据，并将PV状态改成"released"，不将被其它PVC绑定。集群管理员手动通过如下步骤释放存储资源：
-   - 手动删除PV，但与其相关的后端存储资源如(AWS EBS, GCE PD, Azure Disk, or Cinder volume)仍然存在。
-   - 手动清空后端存储volume上的数据。
-   - 手动删除后端存储volume，或者重复使用后端volume，为其创建新的PV。
-- `Delete`: 删除被PVC释放的PV及其后端存储volume。对于动态PV其"reclaim policy"继承自其"storage class"，默认是Delete。集群管理员负责将"storage class"的"reclaim policy"设置成用户期望的形式，否则需要用户手动为创建后的动态PV编辑"reclaim policy"
-- `Recycle`: 保留PV，但清空其上数据，已废弃
-:::
+    扩展"reclaim policy"有三种方式：Retain、Recycle、Deleted。
+
+    * `Retain`: 保护被PVC释放的PV及其上数据，并将PV状态改成"released"，不将被其它 PVC 绑定。集群管理员手动通过如下步骤释放存储资源：
+        - 手动删除 PV，但与其相关的后端存储资源如（AWS EBS, GCE PD, Azure Disk, or Cinder volume）仍然存在。
+        - 手动清空后端存储 volume 上的数据。
+        - 手动删除后端存储 volume，或者重复使用后端 volume，为其创建新的 PV。
+    * `Delete`: 删除被 PVC 释放的PV及其后端存储 volume。对于动态 PV 其"reclaim policy"继承自其"storage class"，默认是 Delete。集群管理员负责将"storage class"的"reclaim policy"设置成用户期望的形式，否则需要用户手动为创建后的动态PV编辑"reclaim policy"
+    * `Recycle`: 保留 PV，但清空其上数据，已废弃
 
 ## 改变默认 sc
 

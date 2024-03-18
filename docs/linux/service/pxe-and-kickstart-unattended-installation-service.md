@@ -12,11 +12,11 @@
 ## PXE 简介
 
 PXE 不是一种安装方式，是一种引导的方式。
- 
-PXE 引导方式要求安装的计算机中必须包含一个 支持 PXE 的网卡，且主板支持网络引导，PXE（Pre-boot Execution Environment）协议使计算机可以通过网络启动。 
- 
+
+PXE 引导方式要求安装的计算机中必须包含一个 支持 PXE 的网卡，且主板支持网络引导，PXE（Pre-boot Execution Environment）协议使计算机可以通过网络启动。
+
 PXE 协议分为 client 和 server 端，PXE client 在网卡 Rom 中，当计算机引导时，cpu 通过加载 bios 映射到内存中的片段，然后检查计算机的健康状况（如cpu风扇，网卡等）继而 把网卡 Rom 中的 PXE client 调入内存引导执行，由 PXE client 将放置在远端的文件通过网络下载到本地运行。
- 
+
 PXE 协议需要 DHCP 服务 和 TFTP/MTFTP 服务配合使用。
 
 DHCP 服务器用来给 PXE client 分配一个 IP 地址，由于是给 PXE client 分配 IP 地址，所以在配置 DHCP 服务器时需要增加相应的设置。

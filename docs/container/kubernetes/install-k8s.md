@@ -1,3 +1,5 @@
+# 安装 k8s
+
 ## 安装环境
 
 | Hostname | IP | CPU | Memory | 系统版本 | Firewalld | Selinux | Docker Version | Kubernetes Version |
@@ -50,11 +52,15 @@ echo "net.bridge.bridge-nf-call-ip6tables = 1" >> /etc/sysctl.conf
 sysctl -p
 
 # 同步时间
-yum install -y ntp
-systemctl enable ntpd
+yum install -y chronyd systemd-timesyncd
+chronyc sources
+sed -i '/^NTP/d' /etc/systemd/timesyncd.conf
+echo 'NTP=ntp.aliyun.com' >> /etc/systemd/timesyncd.conf
 timedatectl set-ntp true
 timedatectl set-timezone Asia/Shanghai
-systemctl restart ntpd
+systemctl enable chronyd --now
+systemctl enable systemd-timesyncd --now
+timedatectl status
 
 # 开启 journal 日志持久化
 mkdir /var/log/journal

@@ -1,3 +1,5 @@
+# 安装 metrics-server
+
 先安装 metrics-server ，这样就能监控到pod。node的资源情况（默认只有cpu、memory的资源审计信息哟，更专业的话需要对接 Prometheus）
 
 ```bash

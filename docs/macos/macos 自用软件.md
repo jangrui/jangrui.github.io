@@ -7,7 +7,7 @@
 iTerm2 是 Terminal 的替代品，是 iTerm 的继承者。
 
 ```bash
-brew install --cask iterm2
+brew install iterm2
 ```
 
 > https://iterm2.com
@@ -15,7 +15,7 @@ brew install --cask iterm2
 ### Docker
 
 ```bash
-brew install --cask docker
+brew install docker
 ```
 
 > https://www.docker.com/get-started
@@ -23,7 +23,7 @@ brew install --cask docker
 ### Virtualbox
 
 ```bash
-brew install --cask virtualbox virtualbox-extension-pack
+brew install virtualbox virtualbox-extension-pack
 ```
 
 > https://www.virtualbox.org
@@ -31,7 +31,7 @@ brew install --cask virtualbox virtualbox-extension-pack
 ### Vagrant
 
 ```bash
-brew install --cask vagrant vagrant-manager vagrant-vmware-utility
+brew install vagrant vagrant-manager vagrant-vmware-utility
 brew install vagrant-completion
 ```
 
@@ -40,7 +40,7 @@ brew install vagrant-completion
 ### Visual Studio Code
 
 ```bash
-brew install --cask visual-studio-code
+brew install visual-studio-code
 ```
 
 > https://code.visualstudio.com/
@@ -50,17 +50,25 @@ brew install --cask visual-studio-code
 微软开源的数据库桌面管理工具。该工具支持 SQL Server、Azure SQL DB 和 SQL DW 数据库，Windows 下的安装包仅不到 100 MB，还支持另外两大操作系统 macOS 和 Linux。
 
 ```bash
-brew install --cask azure-data-studio
+brew install azure-data-studio
 ```
 
 > https://github.com/microsoft/azuredatastudio
+
+### Beekeeper Studio
+
+Beekeeper Studio 是一个跨平台的 SQL 编辑器和数据库管理器，可用于 Linux，Mac 和 Windows。适用于 MySQL，Postgres，SQLite，SQL Server 等的现代且易于使用的 SQL 客户端。
+
+```bash
+brew install beekeeper-studio
+```
 
 ### DBeaver
 
 适用于开发人员，数据库管理员，分析师和所有需要使用数据库的人员的免费的多平台数据库工具。支持所有流行的数据库。
 
 ```bash
-brew install --cask dbeaver-community
+brew install dbeaver-community
 ```
 
 > https://dbeaver.io/
@@ -100,7 +108,7 @@ brew install pgcli
 免费的 FTP 解决方案。
 
 ```bash
-brew install --cask filezilla
+brew install filezilla
 ```
 
 > https://filezilla-project.org
@@ -112,7 +120,7 @@ brew install --cask filezilla
 免费开源的 macOS 防火墙软件。
 
 ```bash
-brew install --cask lulu
+brew install lulu
 ```
 
 > https://github.com/objective-see/LuLu
@@ -122,7 +130,7 @@ brew install --cask lulu
 免费开源的 macOS 解压缩软件。
 
 ```bash
-brew install --cask maczip
+brew install maczip
 ```
 
 > https://ezip.awehunt.com
@@ -132,7 +140,7 @@ brew install --cask maczip
 Snipaste 是一个简单但强大的截图工具，也可以让你将截图贴回到屏幕上！下载并打开 Snipaste，按下 F1 来开始截图，再按 F3，截图就在桌面置顶显示了。就这么简单！
 
 ```bash
-brew install --cask snipaste
+brew install snipaste
 ```
 
 > https://snipaste.com
@@ -142,7 +150,7 @@ brew install --cask snipaste
 Windows alt-tab on macOS。
 
 ```bash
-brew install --cask alt-tab
+brew install alt-tab
 ```
 
 > https://github.com/lwouis/alt-tab-macos
@@ -152,7 +160,7 @@ brew install --cask alt-tab
 使用键盘快捷键和捕捉区域在 macOS 上移动和调整窗口大小。
 
 ```bash
-brew install --cask rectangle
+brew install rectangle
 ```
 
 > https://rectangleapp.com/
@@ -162,7 +170,7 @@ brew install --cask rectangle
 用 SwiftUI 编写的 macOS 状态监视应用程序。
 
 ```bash
-brew install --cask eul
+brew install eul
 ```
 
 > https://github.com/gao-sun/eul
@@ -172,7 +180,7 @@ brew install --cask eul
 适用于 macOS 的剪贴板管理器，只做一项工作 - 随时保留您的复制历史记录。
 
 ```bash
-brew install --cask maccy
+brew install maccy
 ```
 
 > https://maccy.app
@@ -182,7 +190,7 @@ brew install --cask maccy
 QuickLook 插件。
 
 ```bash
-brew install --cask qlcolorcode qlimagesize qlmarkdown qlvideo quicklook-csv qlstephen
+brew install qlcolorcode qlimagesize qlmarkdown qlvideo quicklook-csv qlstephen
 ```
 
 > http://www.quicklookplugins.com/
@@ -194,7 +202,7 @@ brew install --cask qlcolorcode qlimagesize qlmarkdown qlvideo quicklook-csv qls
 draw.io 是一款免费的在线图表编辑工具, 可以用来编辑工作流, BPM, org charts, UML, ER图, 网络拓朴图等.
 
 ```bash
-brew install --cask drawio
+brew install drawio
 ```
 
 > https://www.diagrams.net
@@ -204,7 +212,7 @@ brew install --cask drawio
 Bob 是一款 Mac 端翻译软件，支持划词翻译、截图翻译以及手动输入翻译。
 
 ```bash
-brew install --cask bob
+brew install bob
 ```
 
 > https://ripperhe.gitee.io/bob
@@ -212,7 +220,7 @@ brew install --cask bob
 ### Typora
 
 ```bash
-brew install --cask typora
+brew install typora
 ```
 
 > https://www.typora.io/#download
@@ -222,10 +230,16 @@ brew install --cask typora
 ### clashx-pro
 
 ```bash
-brew install --cask clash-pro
+brew install clash-pro
 ```
 
 > https://github.com/Semporia/ClashX-Pro
+
+### OpenVPN Connet
+
+```bash
+brew install openvpn-connect
+```
 
 ## 音乐视频
 
@@ -234,7 +248,7 @@ brew install --cask clash-pro
 Listen1 可以搜索和播放来自网易云音乐，虾米，QQ音乐，酷狗音乐，酷我音乐，Bilibili，咪咕音乐网站的歌曲，让你的曲库更全面。
 
 ```bash
-brew install --cask listen1
+brew install listen1
 ```
 
 > https://listen1.github.io/listen1
@@ -244,7 +258,7 @@ brew install --cask listen1
 一个现代的 macOS 媒体播放器。
 
 ```bash
-brew install --cask iina
+brew install iina
 ```
 
 > https://iina.io
@@ -254,7 +268,7 @@ brew install --cask iina
 HandBrake 是一款免费开源的万能格式转换工具，这款软件能够支持目前市面上所有的视频格式文件。
 
 ```bash
-brew install --cask handbrake
+brew install handbrake
 ```
 
 > https://handbrake.fr
@@ -266,7 +280,7 @@ brew install --cask handbrake
 OpenCore Configurator 通过简化的图形界面为 OpenCore EFI 引导加载程序创建自定义配置文件。
 
 ```bash
-brew install --cask opencore-configurator
+brew install opencore-configurator
 ```
 
 > http://mackie100projects.altervista.org

@@ -1,6 +1,6 @@
 # CentOS 7 初始化
 
-![Linux](./images/linux.png "linux.png")
+![Linux](https://cdn.jsdelivr.net/gh/jangrui/images@main//linux.png "linux.png")
 
 === "手动初始化"
 
