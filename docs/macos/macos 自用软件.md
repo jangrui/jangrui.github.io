@@ -190,7 +190,9 @@ brew install maccy
 QuickLook 插件。
 
 ```bash
-brew install qlcolorcode qlimagesize qlmarkdown qlvideo quicklook-csv qlstephen
+brew install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package apparency quicklookase qlvideo quicklook-csv
+xattr -r ~/Library/QuickLook
+xattr -d -r com.apple.quarantine ~/Library/QuickLook
 ```
 
 > http://www.quicklookplugins.com/
