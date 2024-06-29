@@ -138,6 +138,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Linux:
+    - SSH 登录失败后锁定时间限制: linux/SSH 登录失败后锁定时间限制.md
     # - CentOS 系统初始化: linux/centos-init.md
     # - Bash:
     #   - 作者: linux/bash/author.md
