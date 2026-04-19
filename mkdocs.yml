@@ -194,6 +194,7 @@ nav:
       - 安装 k8s: container/kubernetes/install-k8s.md
       - 搭建 nfs 作为 k8s 默认 sc: container/kubernetes/setup-nfs-as-k8s-default-sc.md
       - 安装 metrics-server: container/kubernetes/install-metrics-server-for-k8s.md
+      - GPU 资源管理: container/kubernetes/gpu-device-plugin.md
       # - CKA 心得: container/kubernetes/cka.md
 
   - MacOS:
@@ -207,6 +208,20 @@ nav:
   #   - 故障的定义和避免: security/故障的定义和避免.md
   #   - Linux 操作系统加固: security/Linux 操作系统加固.md
   #   - Windows 操作系统安全加固: security/Windows 操作系统安全加固.md
+
+  - 日志:
+    - Loki:
+      - Loki + Promtail 日志采集故障排查: logs/loki/loki-promtail-troubleshooting.md
+    - VictoriaMetrics:
+      - VictoriaLogs 和 Vector: logs/victoriametrics/victorialogs-and-vector.md
+
+  - AIGC:
+    - OpenClaw:
+      - 多 Agent 架构与协作流程: aigc/openclaw/multi-agent-architecture.md
+
+  - 存储:
+    - Ceph:
+      - 集群搭建到应用: storage/ceph/ceph-deploy-cluster.md
 
   # - 面试:
   #   - Nginx 面试题: interview/nginx.md
