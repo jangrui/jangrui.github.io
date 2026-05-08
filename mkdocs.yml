@@ -143,6 +143,8 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
+  - Go:
+    - 单元测试完整指南: go/go-testing-guide.md
   - Linux:
     - SSH 登录失败后锁定时间限制: linux/lock-time-limit-after-ssh-login-failure.md
     # - CentOS 系统初始化: linux/centos-init.md
