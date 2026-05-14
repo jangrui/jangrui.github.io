@@ -225,5 +225,9 @@ nav:
     - Ceph:
       - 集群搭建到应用: storage/ceph/ceph-deploy-cluster.md
 
+  - DevOps:
+    - Jenkins:
+      - Agent 进程限制故障排查: devops/jenkins/jenkins-agent-limits-faq.md
+
   # - 面试:
   #   - Nginx 面试题: interview/nginx.md
